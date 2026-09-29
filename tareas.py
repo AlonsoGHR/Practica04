@@ -12,5 +12,5 @@ def listar_tareas(tareas):
 
 
 def completar_tarea(tareas, indice):
-	tareas[indice - 1]["completada"] = True
-	return tareas
+    tareas[indice]["completada"] = True
+    return tareas
