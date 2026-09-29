@@ -41,6 +41,6 @@ pytest -v
 
 ## Integración Continua
 
-El workflow de GitHub Actions se ejecuta en cada `push` a `main` y en cada
-`pull_request`. Prepara Python 3.12, instala las dependencias, verifica la
-sintaxis y ejecuta las pruebas.
+Cada push a `main` ejecuta GitHub Actions: instala dependencias, verifica la sintaxis del código y corre las pruebas con pytest. El workflow está en `.github/workflows/ci.yml`.
+
+Si alguna prueba falla, el workflow se marca en rojo y bloquea la integración del cambio.
